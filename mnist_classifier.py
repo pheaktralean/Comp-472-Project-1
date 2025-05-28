@@ -48,7 +48,7 @@ print("Testing set size:", X_test.shape[0])
 model = LogisticRegression(max_iter=1000) 
 model.fit(X_train, y_train)
 
-# Making predictions on test data
+# Making predictions on test data 
 y_predict = model.predict(X_test)
 
 # Compariung the predicted labels with the actual label
