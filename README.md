@@ -29,4 +29,9 @@ We use the **digits** dataset from **scikit-learn**:
 - 8x8 pixels each (flattened to 64 features)
 - Labels from o to 9
 
+## Evaluation:
+Generate a **confusion matrix** to see how well each digit is classified.
+Generate a **classification report** for precision, recall, and F1-score.
+Display the confusion matrix and classification report using **print()**.
+
 
