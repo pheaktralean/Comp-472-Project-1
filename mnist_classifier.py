@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sn
 
-# Load the MNIST dataset
+## Load the MNIST dataset
 digits = load_digits()  
 X = digits.data  
 y = digits.target  
@@ -50,10 +50,10 @@ print("Testing set size:", X_test.shape[0])
 model = LogisticRegression(max_iter=1000) 
 model.fit(X_train, y_train)
 
-# Making predictions on test data 
+# Make predictions on test data 
 y_predict = model.predict(X_test)
 
-# Comparing the predicted labels with the actual label
+# Compare the predicted labels with the actual label
 score = accuracy_score(y_predict, y_test)
 print('Logistic Regression MNIST dataset: {}%'.format(score * 100))
 
