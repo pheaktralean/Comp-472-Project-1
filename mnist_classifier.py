@@ -40,7 +40,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Print the number of images in each set
-print("Training set size:", X_train.shape[0])
+print("\nTraining set size:", X_train.shape[0])
 print("Testing set size:", X_test.shape[0])
 
 
@@ -58,7 +58,7 @@ score = accuracy_score(y_predict, y_test)
 print('Logistic Regression MNIST dataset: {}%'.format(score * 100))
 
 
-# Model Evaluation
+## Model Evaluation
 
 # Comparing the actual labels with the predicted labels
 confusionMatrix = confusion_matrix(y_test, y_predict)
@@ -68,10 +68,11 @@ diagonal_sum = np.trace(confusionMatrix)  # Sums the diagonal elements (correct 
 total_sum = np.sum(confusionMatrix)       # Sums all elements
 cm_accuracy = diagonal_sum/total_sum
 
-# Print the confusion matrix and computed accuracy
-print("Confusion Matrix:\n", confusionMatrix)
+# Print the confusion matrix and computed accuracy - Extra Display
+print("\n#-------------Confusion Matrix--------------#\n", confusionMatrix)
 print("Confusion Matrix Accuracy:", cm_accuracy)
-#or? Visualize the matrix using heatmap
+
+# Visualize the matrix using heatmap - Extra Display
 plt.figure(figsize = (10,4))
 sn.heatmap(confusionMatrix, annot=True)
 plt.title("Confusion Matrix Heatmap")
@@ -83,4 +84,4 @@ plt.show()
 classificationReport = classification_report(y_test, y_predict)
 
 # Print the classification report
-print("Classification Report:\n", classificationReport)
+print("\n#------------Classification Report------------#\n", classificationReport)
