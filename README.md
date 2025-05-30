@@ -23,13 +23,17 @@ Comp-472-Project-1/
 
 ## Setup Instruction
 1. Clone the repository
-2. Create and activate a virtual environment
-3. nstall the dependencies  
+2. Create and activate a virtual environment using venv
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate 
+4. Install the dependencies  
    ```bash
    pip install -r requirements.txt
-4. How to run the project
+5. How to run the project
     ```bash
     python3 mnist_classifier.py
+    
 ## Dataset Used
 We use the **digits** dataset from **scikit-learn**:
 - 1797 grayscale images
@@ -42,10 +46,14 @@ We use the **digits** dataset from **scikit-learn**:
 - Sci-kit learn
 - Seaborn
 
-## Evaluation:
+## Model Evaluation
 Generate a **confusion matrix** to see how well each digit is classified.
 Generate a **classification report** for precision, recall, and F1-score.
 Display the confusion matrix and classification report using **print()**.
+
+We also included additional steps such as:
+1. Visualizing the confusion matrix using a heatmap for improved readability.
+2. Calculating the model's accuracy directly from the confusion matrix.
 
 ## Sample Results
 
