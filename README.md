@@ -47,6 +47,14 @@ We use the **digits** dataset from **scikit-learn**:
 - Sci-kit learn
 - Seaborn
 
+## Model Training: Logistic Regression
+Preprocess and vectorize the dataset using TF-IDF.
+Split the data into training and test sets.
+Train the logistic regression model and evaluate its performance.
+
+We included an additional step to make sure the model training was accurate:
+1. `accuracy_score` that calculates the model's accuracy based on the predictions and actual tests.
+
 ## Model Evaluation
 Generate a **confusion matrix** to see how well each digit is classified.
 Generate a **classification report** for precision, recall, and F1-score.
