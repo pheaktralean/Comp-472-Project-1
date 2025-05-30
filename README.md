@@ -22,8 +22,9 @@ Comp-472-Project-1/
 ```
 
 ## Setup Instruction
-1. Clone the repository
-2. Create and activate a virtual environment using venv
+1. Download Python
+2. Clone the repository
+3. Create and activate a virtual environment using venv
    ```bash
    python3 -m venv venv
    source venv/bin/activate 
