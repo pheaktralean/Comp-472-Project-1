@@ -24,6 +24,8 @@ Comp-472-Project-1/
 ## Setup Instruction
 1. Download Python
 2. Clone the repository
+    ```bash
+   https://github.com/pheaktralean/Comp-472-Project-1 
 3. Create and activate a virtual environment using venv
    ```bash
    python3 -m venv venv
